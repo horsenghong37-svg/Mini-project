@@ -1,0 +1,834 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f5f9;
+    font-family: "Kantumruy Pro", sans-serif;
+    color: #1e293b;
+    padding-top: 125px;
+    line-height: 1.5;
+}
+
+.main-header {
+    width: 100%;
+    height: 70px;
+    z-index: 1000;
+    background-color: rgb(24, 24, 112);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header-continer {
+    max-width: 1200px;
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.header-left {
+    display: inline-block;
+    width: 25%;
+    height: 100%;
+    line-height: 70px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.brand-logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: aqua;
+    text-decoration: none;
+}
+
+.brand-logo i {
+    color: yellow;
+}
+
+.header-center {
+    display: inline-block;
+    width: 50%;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.search-box {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    line-height: 70px;
+    vertical-align: middle;
+}
+
+.search-input {
+    width: 85%;
+    height: 45px;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid gainsboro;
+    background-color: rgb(189, 184, 184);
+    padding-left: 55px;
+    font-size: 15px;
+}
+
+.search-btn {
+    position: absolute;
+    width: 40px;
+    height: 38px;
+    background-color: rgb(165, 194, 211);
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid blueviolet;
+    top: 15px;
+    right: 85%;
+    line-height: 30px;
+}
+
+.header-rigth {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: right;
+    width: 23%;
+    height: 70px;
+    line-height: 70px;
+}
+
+.action-btn {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    font-size: 22px;
+    color: white;
+    padding: 6px 5px;
+    margin-left: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.icon-bage {
+    position: absolute;
+    top: -2px;
+    right: -6px;
+    min-width: 16px;
+    height: 16px;
+    background-color: #dc2626;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.category-nav {
+    position: fixed;
+    top: 70px;
+    left: 0;          
+    width: 100%;    
+    text-align: center;
+    background-color: whitesmoke;
+    border: 1px solid gainsboro;
+    padding: 10px 0px;
+}
+
+.cat-list {
+    list-style: none;
+}
+
+.cat-item {
+    display: inline-block;
+}
+
+.cat-link {
+    display: inline-block;
+    padding: 10px 8px;
+    font-size: 14px;
+    color: black;
+    background-color: rgb(235, 162, 238);
+    border-radius: 10px;
+    border: 1px solid grey;
+    text-decoration: none;
+}
+
+.cat-link.active {
+    color: rgb(12, 12, 12);
+    font-weight: bold;
+}
+
+.cat-link.fire i {
+    color: red;
+}
+
+.container {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.hero-section {
+    margin: 25px 0 35px;
+}
+
+.hero-banner {
+    position: relative;
+    background-color: #1e40af;
+    border-radius: 12px;
+    padding: 50px 35px;
+    color: white;
+}
+
+.hero-tag {
+    position: absolute;
+    top: 18px;
+    right: 25px;
+    background-color: #ea580c;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 700;
+    z-index: 10;
+}
+
+.hero-content {
+    display: inline-block;
+    width: 60%;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.hero-subtitle {
+    font-size: 13px;
+    font-weight: 700;
+    color: #93c5fd;
+    margin-bottom: 6px;
+}
+
+.hero-title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.hero-desc {
+    max-width: 490px;
+    font-size: 15px;
+    color: #dbeafe;
+    margin-bottom: 20px;
+}
+
+.btn-hero {
+    display: inline-block;
+    background-color: #f59e0b;
+    color: #1e293b;
+    padding: 9px 20px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.hero-image-wrap {
+    display: inline-block;
+    position: relative;
+    width: 34%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.hero-image {
+    display: block;
+    width: 80%;
+    height: 220px;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.floating-pill {
+    position: absolute;
+    bottom: 6px;
+    left: -40px;
+    background-color: #0f172a;
+    border: 1px solid #3b82f6;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    color: white;
+    z-index: 5;
+}
+
+.floating-pill i {
+    color: yellow;
+    margin-right: 6px;
+}
+
+.container-1{
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    text-align: center;
+}
+
+.hero-box1{
+    display: inline-block;
+    line-height: 1.5;
+    vertical-align: middle;
+    width: 20%;
+    height: 180px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(202, 198, 198);
+    padding-top: 20px;
+}
+
+.hero-box1 i{
+    font-size: 40px;
+    color: rgb(131, 45, 243);
+}
+
+.hero-box1 h2{
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.hero-box2{
+    display: inline-block;
+    line-height: 1.5;
+    vertical-align: middle;
+    width: 20%;
+    height: 180px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(202, 198, 198);
+    padding-top: 20px;
+    margin-left: 15px;
+}
+
+.hero-box2 i{
+    font-size: 40px;
+    color: rgb(131, 45, 243);
+}
+
+.hero-box2 h2{
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.hero-box3{
+    display: inline-block;
+    line-height: 1.5;
+    vertical-align: middle;
+    width: 20%;
+    height: 180px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(202, 198, 198);
+    padding-top: 20px;
+    margin-left: 15px;
+}
+
+.hero-box3 i{
+    font-size: 40px;
+    color: rgb(131, 45, 243);
+}
+
+.hero-box3 h2{
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.hero-box4{
+    display: inline-block;
+    line-height: 1.5;
+    vertical-align: middle;
+    width: 20%;
+    height: 180px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(202, 198, 198);
+    padding-top: 20px;
+    margin-left: 15px;
+}
+
+.hero-box4 i{
+    font-size: 40px;
+    color: rgb(131, 45, 243);
+}
+
+.hero-box4 h2{
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.container-2{
+    display: inline-block;
+    /* position: sticky; */
+    vertical-align: middle;
+    line-height: 1.5;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: rgb(172, 172, 192);
+    border-radius: 15px;
+    margin-top: 25px;
+    /* z-index: 100; */
+}
+
+.brand-name{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.5;
+    width: 60%;
+    height: auto;
+}
+
+.brand-name i{
+    color: rgb(206, 95, 95);
+    font-size: 30px;
+}
+
+.brand-name h1{
+    display: inline;
+    margin-left: 10px;
+    color: blueviolet;
+}
+
+.brand-name h2{
+    color: darkcyan;
+    margin-left: 80px;
+}
+
+.brand-go{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.5;
+    width: 37%;
+    height: auto;
+    text-align: right;
+    font-size: 20px;
+}
+
+.brand-go a{
+    text-decoration: none;
+    color:cornsilk
+}
+
+.container-product {
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.product-card {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    width: 22.5%;
+    margin: 0 0.9% 20px 0.9%;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.product-card img {
+    display: block;
+    width: 100%;
+    height: 145px;
+    object-fit: cover;
+}
+
+.product-badge {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    padding: 0 8px;
+    height: 22px;
+    border-radius: 4px;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.badge-sale { 
+    background-color: #dc2626;
+}
+.badge-hot  {
+    background-color: #ea580c; 
+}
+.badge-new  { 
+    background-color: #16a34a; 
+}
+
+.product-fav {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    color: #dc2626;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 28px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.product-info {
+    padding: 14px 12px 12px;
+}
+
+.product-cat {
+    font-size: 12px;
+    color: #64748b;
+}
+
+.product-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0f172a;
+    min-height: 48px;
+    margin: 4px 0 6px;
+}
+
+.product-price {
+    margin-bottom: 12px;
+}
+
+.price-new {
+    font-size: 22px;
+    font-weight: 700;
+    color: #2563eb;
+}
+
+.price-old {
+    margin-left: 8px;
+    font-size: 15px;
+    color: #94a3b8;
+    text-decoration: line-through;
+}
+
+.product-btn {
+    display: block;
+    padding: 9px 0;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+}
+
+.container-3{
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+}
+
+.container-box1{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    line-height: 1.5;
+    width: 49%;
+    height: 100%;
+    background-color: darkseagreen;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.container-tag{
+    position: absolute;
+    display: inline-block;
+    line-height: 1.7;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    background-color: rgb(189, 223, 243);
+    left: 444px;
+    border-radius: 6px;
+    color: rgb(14, 46, 73);
+}
+
+.container-box1 h2{
+    color: white;
+    font-weight: bold;
+    line-height: 3;
+}
+
+.box-find{
+    display: inline-block;
+    width: 140px;
+    height: 30px;
+    background-color: rgb(155, 212, 150);
+    border-radius: 6px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.box-find a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.container-box2{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    line-height: 1.5;
+    width: 49%;
+    height: 100%;
+    background-color: cadetblue;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 15px;
+}
+
+.container-tag1{
+    position: absolute;
+    display: inline-block;
+    line-height: 1.7;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    background-color: rgb(189, 223, 243);
+    left: 444px;
+    border-radius: 6px;
+    color: rgb(14, 46, 73);
+}
+
+.container-box2 h2{
+    color: white;
+    font-weight: bold;
+    line-height: 3;
+}
+
+.box-find1{
+    display: inline-block;
+    width: 140px;
+    height: 30px;
+    background-color: rgb(61, 138, 115);
+    border-radius: 6px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.box-find1 a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.container-link{
+    display: inline-block;
+    position: fixed;
+    bottom: 15px;
+    right: 0px;
+    text-align: right;
+    vertical-align: middle;
+    line-height: 1.5;
+}
+
+.link-above{
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 60px;
+    background-color: #f59e0b;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.link-above .icon-bage{
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.link-above i{
+    font-size: 20px;
+}
+
+.link-under{
+    display: block;
+    position: relative;
+    width: 220px;
+    height: 50px;
+    text-align: center;
+    background-color: #519fb3;
+    border-radius: 40px;
+    margin-left: 65px;
+}
+
+.link-contact{
+    font-size: 15px;
+    margin-top: 10px;
+    line-height: 50px;
+    font-weight: 500;
+}
+
+.link-contact a{
+    text-decoration: none;
+}
+
+.link-under .icon-bage{
+    background-color: green;
+    right: 4px;
+    width: 10px;
+    height: 13px;
+    border-radius: 50%;
+}
+.footer{
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(19, 19, 66);
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.layout-logo{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.5;
+    width: 28%;
+    height: 170px;
+    /* background-color: #3b82f6; */
+}
+
+.logo-name {
+    font-size: 20px;
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.logo-name i{
+    color: #f59e0b;
+}
+
+.layout-logo p{
+    color: rgb(243, 207, 207);
+    line-height: 1.5;
+    margin: 10px;
+    font-size: 15px;
+}
+
+.location{
+    color: rgb(243, 207, 207);
+    margin-left: 10px;
+}
+
+.layout-link{
+    display: inline-block;
+    vertical-align: middle;
+    width: 20%;
+    height: 170px;
+    /* background-color: #ea580c; */
+}
+
+.link{
+    font-size: 15px;
+    line-height: 2;
+}
+
+.link ul{
+    list-style: none;
+}
+
+.link a{
+    text-decoration: none;
+    color: rgb(243, 207, 207);
+}
+
+.layout-service{
+    display: inline-block;
+    vertical-align: middle;
+    width: 20%;
+    height: 170px;
+    /* background-color: blueviolet; */
+}
+
+.layout-register{
+    display: inline-block;
+    vertical-align: middle;
+    width: 30%;
+    height: 170px;
+    /* background-color: rgb(43, 159, 226); */
+}
+
+.layout-register P{
+    line-height: 3;
+    color: rgb(243, 207, 207);
+}
+
+.input-infor-email{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 320px;
+    height: 50px;
+    text-align: right;
+}
+
+.email-input{
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 45px;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.logo-icon{
+    position: absolute;
+    display: inline-block;
+    width: 37px;
+    height: 34px;
+    background-color: #3b82f6;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 6px;
+    top: 4px;
+    right: 7px;
+}
+
+.logo-icon i{
+    font-size: 30px;
+}
+
+.copyright{
+    color: rgb(243, 207, 207);
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+}
